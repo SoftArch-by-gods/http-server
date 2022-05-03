@@ -18,7 +18,10 @@ func main() {
 		now := time.Now().Format(RFC3339)
 		inStruct := Date{now}
 
-		data, _ := json.MarshalIndent(inStruct, "", "  ")
+		data, err := json.MarshalIndent(inStruct, "", "  ")
+		if err != nil {
+			panic(err)
+		}
 		result := string(data)
 		fmt.Fprintf(w, result)
 	})
