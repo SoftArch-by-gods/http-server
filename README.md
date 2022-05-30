@@ -1,9 +1,12 @@
-# http-server
+# Http server
 
-Лабораторна робота №1
-
-Тема: Git та HTTP сервер
-Мета: Отримання навичок роботи з системою контролю версій та HTTP протоколом
-
-Результат:
- 1️⃣ http server
+To start server, use:
+```
+go run server.go
+```
+or
+```
+go build server.go
+./server
+```
+Click the link http://localhost:8795/time to see the current time
